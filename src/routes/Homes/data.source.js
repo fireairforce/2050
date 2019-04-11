@@ -18,8 +18,9 @@ export const Nav01DataSource = {
     children: [
       { name: 'item0', a: { children: '主页', href: '' } },
       { name: 'item1', a: { children: '注册报名', href: '/first' } },
-      { name: 'item2', a: { children: '帐号查看', href: '/login' } },
+      { name: 'item2', a: { children: '帐号查看', href: '/account' } },
       { name: 'item3', a: { children: '2050官网', href: 'https://2050.org.cn' } },
+      { name: 'contest', a: { children: '2050竞赛会场', href: 'http://2050.acmclub.cn' } },
       {
         name: 'item~ju0pznv84gf',
         a: { children: 'Travel Award申请', href: '/login' },
@@ -33,7 +34,7 @@ export const Banner30DataSource = {
   textWrapper: {
     className: 'banner3-text-wrapper',
     children: [
-     
+
       {
         name:'pic',
         className:'banner3-pic',
@@ -54,7 +55,7 @@ export const Banner30DataSource = {
         children: '2050编程竞赛  一万人码@2019',
         texty: true,
       },
-      //  新的时间 
+      //  新的时间
       {
         name: 'name',
         className: 'banner3-name',
@@ -123,7 +124,7 @@ export const Content130DataSource = {
             2050编程竞赛是CCPC与2050志愿者共同发起的面向全球编程爱好者的程序设计竞赛。
            </p>
            <br />
-           <p style={{display:'block',width:'80%',margin:'0 auto'}}> 
+           <p style={{display:'block',width:'80%',margin:'0 auto'}}>
            比赛的宗旨是给广大编程爱好者提供一个学习和交流的平台，提高参赛者分析和解决实际问题的能力，发现并且培养在未来三十年能够通过技术一起改变世界的伙伴。
            </p>
            <br />
@@ -132,7 +133,7 @@ export const Content130DataSource = {
            </p>
            <br />
             <p style={{display:'block',width:'80%',margin:'0 auto'}}>
-            2019年4月26日到28日，上万年青人在杭州云栖小镇因科技而团聚。我们希望热爱编程的你们，也能来到2050。 
+            2019年4月26日到28日，上万年青人在杭州云栖小镇因科技而团聚。我们希望热爱编程的你们，也能来到2050。
             </p>
             <br />
             <p style={{display:'block',width:'80%',margin:'0 auto'}}>
@@ -267,7 +268,7 @@ export const Content20DataSources = {
         本次活动所有捐赠款项均由东北大学秦皇岛分校进行财务管理，您的每一分爱心都将用到2050编程竞赛活动中。
         </p>
         <p　style={{display:'block',width:'100%',margin:'0 auto'}}>详情请前往：<a href="/jk">捐赠通道</a></p>
-        
+
       </span>
     ),
   },
@@ -451,7 +452,7 @@ export const Content60DataSource = {
           ),
         },
       },
- 
+
       {
         name: 'block2',
         img: {

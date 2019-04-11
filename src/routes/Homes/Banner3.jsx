@@ -15,8 +15,11 @@ class Banner extends React.PureComponent {
       if (name.match('button1')) {
         return (
           <div style={{margin:'-40px auto 0px'}}>
-            <Button type="primary" key={name} {...$item} style={{overflow:'hidden',width:'130px',height:'50px'}}>
-              <a href={`${item.router}`}>{item.children}</a>
+            <Button type="primary" key={'button1'} {...$item} style={{ display: 'inline-block', overflow:'hidden',width:'130px',height:'50px'}}>
+              <a href={'/first'}>立即报名</a>
+            </Button>
+            <Button type="primary" key={'button2'} {...$item} style={{ display: 'inline-block', marginLeft: 10, overflow:'hidden',width:'130px',height:'50px'}}>
+              <a href='http://2050.acmclub.cn'>前往竞赛</a>
             </Button>
           </div>
         );
