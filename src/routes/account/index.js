@@ -3,7 +3,6 @@ import { Form, Input, Button, Icon, Alert, message } from 'antd'
 import './index.less'
 import axios from 'axios'
 
-@Form.create()
 class Account extends Component {
   state = {
     loading: false,
@@ -26,7 +25,7 @@ class Account extends Component {
     this.setState({ loading: true })
     const res = await axios('http://47.75.119.189/2050/getaccount', {
       method: 'POST',
-      data: data
+      data
     })
 
     if (res && res.data && res.data.code === 0) {
@@ -60,16 +59,21 @@ class Account extends Component {
             {loading ? '查询中' : '查询账号'}
           </Button>
           {success && (
+            <div>
             <Alert
               message={
                 <div>
                   <p>账号：{account}</p>
                   <p>密码：{password}</p>
+                  <p>题册密码: NEUQ-CCPC-2050</p>
                 </div>
               }
               type='success'
               showIcon
             />
+            <Button type="primary" className='account-check-button' style={{marginTop:'20px'}}><a href="http://2050.acmclub.cn/" target="__blank">比赛入口</a></Button>
+            <Button type="primary" className='account-check-button' style={{marginTop:'20px'}}><a href="http://ccpc.acmclub.cn/2050-problems.zip">题册下载(密码:NEUQ-CCPC-2050)</a></Button>
+            </div>
           )}
           {!success && !!message && <Alert message={message} type='error' showIcon />}
         </Form>
@@ -78,4 +82,4 @@ class Account extends Component {
   }
 }
 
-export default Account
+export default Form.create()(Account);

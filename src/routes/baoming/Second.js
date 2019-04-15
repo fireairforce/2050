@@ -16,7 +16,7 @@ class Second extends Component{
     this.state={
       value:"male",
       prov:'',
-      sch:''
+      scl:''
     }
   }
   onChanges = (e) => {
@@ -36,13 +36,15 @@ class Second extends Component{
   componentDidMount(){
     
     data=this.props.location.query
-    console.log(data)
+    // console.log(data)
   }
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        let sc=school.replace(/\d/g, '')
+        // console.log(this.state);
+        // const { prov } = this.state;
+        let sc=school?school.replace(/\d/g, ''):'职场人士'
         if(sc==='其他学校'){
             sc=values.sn
         } 
@@ -73,11 +75,11 @@ class Second extends Component{
             }else{
               if(res.status===200){
                 message.success("报名成功")
-                console.log(res)
+                // console.log(res)
                 this.props.dispatch(
                   routerRedux.push({
                      pathname:'/success',
-                     query:{...abc,number:res.data.user_id}
+                     query:{...abc,number:res.data.data.users_id}
                   })
                 )
               }
@@ -151,7 +153,7 @@ class Second extends Component{
           {getFieldDecorator('password', {
             rules: [{ required: true, message: '请设置密码' }]
           })(
-            <Input  placeholder='请设置密码' />
+            <Input type="password" placeholder='请设置密码' />
           )}
         </FormItem>
         <FormItem>

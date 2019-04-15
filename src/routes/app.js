@@ -15,8 +15,6 @@ const App = (props) => {
   return (
 
       <Switch>
-        {/* <Route exact path='/' component={Homepage} />
-        <Route path='/home' component={Homepage} /> */}
         <Route exact path='/' component={A} />
         <Route path='/account' component={Account} />
         <Route path='/first' component={First} />

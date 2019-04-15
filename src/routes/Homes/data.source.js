@@ -1,10 +1,12 @@
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 // let value;
 // axios.get('http://47.75.119.189/2050/count').then(res=>{
 //   value = res.data.data.count;
 // })
+
+
 
 export const Nav01DataSource = {
   wrapper: { className: 'header0 home-page-wrapper' },
@@ -21,10 +23,10 @@ export const Nav01DataSource = {
       { name: 'item2', a: { children: '帐号查看', href: '/account' } },
       { name: 'item3', a: { children: '2050官网', href: 'https://2050.org.cn' } },
       { name: 'contest', a: { children: '2050竞赛会场', href: 'http://2050.acmclub.cn' } },
-      {
-        name: 'item~ju0pznv84gf',
-        a: { children: 'Travel Award申请', href: '/login' },
-      },
+      // {
+      //   name: 'item~ju0pznv84gf',
+      //   a: { children: 'Travel Award申请', href: '/login' },
+      // },
     ],
   },
   mobileMenu: { className: 'header0-mobile-menu' },
@@ -43,7 +45,7 @@ export const Banner30DataSource = {
              <img src="http://lpf.yywlx.cn/2050.png" alt="pic" />
           </div>
         )
-    },
+      },
       {
         name: 'name-en',
         className: 'banner3-name-en',
@@ -55,47 +57,72 @@ export const Banner30DataSource = {
         children: '2050编程竞赛  一万人码@2019',
         texty: true,
       },
-      //  新的时间
       {
-        name: 'name',
-        className: 'banner3-name',
-        children: (
-          <span>
-            <p style={{color:'red'}}>2019年4月13日 19:00-22:00</p>
-          </span>
-        ),
-      },
-          // 原来时间
-          {
             name: 'name',
             className: 'banner3-name',
             children: (
               <span>
-                <p style={{textDecoration:'line-through'}}>2019年4月14日 14:00-17:00</p>
+                <p>2050线下团聚 杭州欢迎您</p>
               </span>
             ),
           },
+           //  新的时间
       {
-        name: 'time',
+        name: 'name',
         className: 'banner3-time',
         children: (
           <span>
-            <p>报名截止时间：2019年4月13日 00:00:00（北京时间）</p>
+            <p>2019年4月26号-28号</p>
           </span>
         ),
       },
-      {
-        name: 'time',
-        className: 'banner3-time',
-        children: (
-          <span>
-            <p>比赛入口将于开赛前30min公布，请关注本网站更新。</p>
-          </span>
-        ),
-      },
-      // { name: 'button', className: 'banner3-button', children: '在线捐赠',router:'/jk' },
-
-      { name: 'button1', className: 'banner3-button', children: '立即报名',backgroundColor:'rgb(255,245,225)',color:'red',router:'/first' },
+       {
+         name:'button3',
+         className:'banner3-button'
+       },
+      /**
+       * 以下为2050CCPC报名使用过的源代码
+       */
+      // { name: 'button2'},
+      //  新的时间
+      // {
+      //   name: 'name',
+      //   className: 'banner3-name',
+      //   children: (
+      //     <span>
+      //       <p style={{color:'red'}}>2019年4月13日 19:00-22:00</p>
+      //     </span>
+      //   ),
+      // },
+          // 原来时间
+      //     {
+      //       name: 'name',
+      //       className: 'banner3-name',
+      //       children: (
+      //         <span>
+      //           <p style={{textDecoration:'line-through'}}>2019年4月14日 14:00-17:00</p>
+      //         </span>
+      //       ),
+      //     },
+      // {
+      //   name: 'time',
+      //   className: 'banner3-time',
+      //   children: (
+      //     <span>
+      //       <p>报名截止时间：2019年4月13日 00:00:00（北京时间）</p>
+      //     </span>
+      //   ),
+      // },
+      // {
+      //   name: 'time',
+      //   className: 'banner3-time',
+      //   children: (
+      //     <span>
+      //       <p>比赛入口将于开赛前30min公布，请关注本网站更新。</p>
+      //     </span>
+      //   ),
+      // },
+      { name: 'button1' },
     ],
   },
 };

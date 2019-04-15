@@ -44,14 +44,14 @@ class First extends Component {
     this.props.form.validateFields((err,values)=>{
       if(!err){
         this.countDown()
-        console.log(values)
+        // console.log(values)
         axios("http://47.75.119.189/2050/mobileauth",{
           method:'POST',
           data:{
             mobile:values.mobile
           }
         }).then(res=>{
-          console.log(res)
+          // console.log(res)
           if(res.data.code===0){
            
             if(res.status===200){
