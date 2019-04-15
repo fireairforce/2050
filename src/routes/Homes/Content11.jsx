@@ -35,7 +35,7 @@ class Content11 extends React.PureComponent {
           {...dataSource.button}
           animation={{ y: 30, opacity: 0, type: 'from', delay: 300 }}
         >
-          <a {...dataSource.button.children.a} href="/first">
+          <a {...dataSource.button.children.a} href="https://shimo.im/docs/qm4W0bqZS2UJoIls/read">
             {dataSource.button.children.a.children}
           </a>
         </TweenOne>

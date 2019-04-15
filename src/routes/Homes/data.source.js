@@ -242,7 +242,7 @@ export const Content20DataSource = {
                   PASS一张。同理，如果能召集40个人比赛，前两名的同学如果能进入总排名的前50%，这两位同学都可获得2050
                   PASS一张。以此类推。
                 </p>
-                <h3 style={{textAlign:'left'}}>二、Travel award.</h3>
+                {/* <h3 style={{textAlign:'left'}}>二、Travel award.</h3>
                 <p style={{textAlign:'left'}}> a) 申请网站链接：<a target="_blank" href="/login">申请通道</a></p>
                 <p style={{textAlign:'left'}}> b) 比赛成绩排名前50%的参赛者的申请会被考虑。</p>
                 <p style={{textAlign:'left'}}> c) 申请者需写明: </p>
@@ -257,8 +257,8 @@ export const Content20DataSource = {
                   {' '}
                   d) 我们鼓励申请者根据自己的实际情况申请travel
                   award。鼓励个人去承担部分差旅费用。因为我们这次比赛没有任何官方的赞助商。所有的活动都是2050和CCPC的志愿者发起的。
-                </p>
-                <h3 style={{textAlign:'left'}}>三、纪念t-shirt.</h3>
+                </p> */}
+                <h3 style={{textAlign:'left'}}>二、纪念t-shirt.</h3>
                 <p style={{textAlign:'left'}}>注册尾数为100的整数的同学会获得纪念t-shirt一件。</p>
       </span>
     ),
@@ -398,8 +398,8 @@ export const Content71DataSource = {
               <span>
                 <h3>线上注册时间：</h3>
                 <p>2019年4月13日 00:00:00（北京时间）截止</p>
-                <h3>Travel award申请时间：</h3>
-                <p>2019年4月13日 00:00:00（北京时间) 截止。</p>
+                {/* <h3>Travel award申请时间：</h3>
+                <p>2019年4月13日 00:00:00（北京时间) 截止。</p> */}
                 <p>2019年4月15日 公布结果。</p>
                 <h3>线上比赛时间：</h3>
                 <p>2019年4月13日 19:00-22:00</p>
@@ -552,6 +552,6 @@ export const Content110DataSource = {
   },
   button: {
     className: '',
-    children: { a: { className: 'button', href: '#', children: '立即报名' } },
+    children: { a: { className: 'button', href: '#', children: '了解详情' } },
   },
 };
