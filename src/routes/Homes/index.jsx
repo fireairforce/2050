@@ -25,6 +25,7 @@ import {
   Content110DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
+import { Redirect } from 'react-router';
 
 let isMobile;
 enquireScreen((b) => {
@@ -118,16 +119,15 @@ export default class Home extends React.Component {
       />,
     ];
     return (
-      <div
-        className="templates-wrapper"
-        ref={(d) => {
-          this.dom = d;
-        }}
-      >
-        {/* 如果不是 dva 2.0 替换成 {children} start */}
-        {this.state.show && children}
-        {/* 如果不是 dva 2.0 替换成 {children} end */}
-      </div>
+      <Redirect to='shimo' />
+      // <div
+      //   className="templates-wrapper"
+      //   ref={(d) => {
+      //     this.dom = d;
+      //   }}
+      // >
+      //   {this.state.show && children}
+      // </div>
     );
   }
 }
