@@ -2,6 +2,7 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "antd": "^3.16.1",
+    "antd-mobile": "^2.2.11",
     "axios": "^0.17.1",
     "babel-runtime": "^6.9.2",
     "bodymovin": "^4.13.0",

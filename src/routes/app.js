@@ -11,7 +11,9 @@ import Sq from '../routes/second/sq'
 import Import from './ck'
 import A from '../routes/Homes/index'
 import Jk from '../routes/home/index'
-import ShiMo from '../routes/shimo'
+// import ShiMo from '../routes/shimo'
+import CheckOne from '../routes/check/check1/index'
+import CheckTwo from '../routes/check/check2/index'
 const App = (props) => {
   return (
 
@@ -24,9 +26,9 @@ const App = (props) => {
         <Route path="/login" component={Login} />
         <Route path="/sq" component={Sq} />
         <Route path="/import" component={Import} />
-        <Route path="/shimo" component={ShiMo} />
+        <Route path="/checkin" component={CheckOne} />
+        <Route path="/checkout" component={CheckTwo} />
         <Route path="/jk" component={Jk} />
-        {/* <Redirect from='*' to='/404' /> */}
       </Switch>
 
   )

@@ -119,15 +119,14 @@ export default class Home extends React.Component {
       />,
     ];
     return (
-      <Redirect to='shimo' />
-      // <div
-      //   className="templates-wrapper"
-      //   ref={(d) => {
-      //     this.dom = d;
-      //   }}
-      // >
-      //   {this.state.show && children}
-      // </div>
+      <div
+        className="templates-wrapper"
+        ref={(d) => {
+          this.dom = d;
+        }}
+      >
+        {this.state.show && children}
+      </div>
     );
   }
 }

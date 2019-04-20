@@ -122,7 +122,7 @@ export const Banner30DataSource = {
       //     </span>
       //   ),
       // },
-      { name: 'button1' },
+
     ],
   },
 };
