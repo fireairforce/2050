@@ -22,7 +22,6 @@ class CheckOne extends React.Component{
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
           if (!err) {
-            // console.log(values);
           axios.post('http://be2050.ccpc.io/login',{
               ...values
             }).then(res=>{
@@ -34,6 +33,8 @@ class CheckOne extends React.Component{
                      query:{ ...res.data.data, name:values.name, mobile:values.phone }
                   })
                 )
+              }else {
+                message.info('后台故障，无法登录')
               }
             })
           
@@ -42,12 +43,13 @@ class CheckOne extends React.Component{
         
       }
     render(){
+           const one = 'checkone';
            const { getFieldDecorator } = this.props.form;
     return (
-        <div className="wrapper">
-          
+        <div className={`${one}-wrapper`}>
+         <div className={`${one}-content`}>
           <Alert
-           style={{width:'300px',margin:'0 auto'}}
+           style={{width:'360px',margin:'0 auto'}}
             message={
                 <div>
                    {this.state.document}
@@ -57,7 +59,7 @@ class CheckOne extends React.Component{
             showIcon
         />
          
-        <Form onSubmit={this.handleSubmit} className="login-form">
+        <Form onSubmit={this.handleSubmit} className={`${one}-login-form`}>
             <FormItem label="姓名">
             {getFieldDecorator('name', {
                 rules: [{ required: true, message: '请填写您的姓名!' }],
@@ -78,6 +80,7 @@ class CheckOne extends React.Component{
             </Button>
             </FormItem>
         </Form>
+      </div>
       </div>
     );
   }

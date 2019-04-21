@@ -16,7 +16,7 @@ class Banner extends React.PureComponent {
         return(
           <div>
             <Button type="primary" key={'button1'} {...$item} style={{ display: 'inline-block', overflow:'hidden',width:'130px',height:'50px'}}><a href="https://shimo.im/docs/qm4W0bqZS2UJoIls/read" target="__blank">点击了解详情</a></Button>
-            <Button type="primary" key={'button1'} {...$item} style={{ display: 'inline-block', overflow:'hidden',width:'130px',height:'50px',marginLeft:'20px'}}><a href="/checkin">点击报名</a></Button>
+            <Button type="primary" key={'button1'} {...$item} style={{ display: 'inline-block', overflow:'hidden',width:'130px',height:'50px',marginLeft:'20px'}}><a href="/checkin">登记注册</a></Button>
           </div>
         )
       }
